@@ -1,37 +1,43 @@
-const Sequelize = require('sequelize');
+const Promise = require('bluebird');
+const sequelize = require('./connection');
 
-const keys = require('./../keys.js');
+const seeder = require('./seedData/seedMethods');
 
-const connection = 'postgres://' + keys.USER_SQL + ':'+ keys.PASS_SQL + keys.SERVER_SQL;
-const sequelize = new Sequelize(connection, {
-  dialect: 'postgres',
-  port: 5432
-});
+const initDatabase = () => {
+	return new Promise((resolve, reject) => {
+		var Answer = require('./../models/answers.model');
+		var Class = require('./../models/classes.model');
+		var Question = require('./../models/questions.model');
+		var Student = require('./../models/students.model');
+		var Teacher = require('./../models/teachers.model');
+		var Test = require('./../models/tests.model');
+		
+		Teacher.hasMany(Class);
+		Class.belongsTo(Teacher);
 
-var User = sequelize.define('User', {
-  username: Sequelize.STRING,
-  password: Sequelize.STRING
-});
+		Class.hasMany(Test);
+		Test.belongsTo(Class);
 
-sequelize.sync({force: true}).then((err) => {
-    //force:true      
-    //IF YOU UNCOMMENT ABOVE IT WILL DELETE EVERYTHING IN THE DATABASE AND
-    //DROP ALL TABLES!!!!!!!! 
-		console.log('Sync Complete!');
+		Test.hasMany(Question);
+		Question.belongsTo(Test);
+
+		Question.hasMany(Answer);
+		Answer.belongsTo(Question);
+
+		Student.hasMany(Answer);
+		Answer.belongsTo(Student);
+
+		Class.belongsToMany(Student, {
+			through: 'class_student'
+		});
+		Student.belongsToMany(Class, {
+			through: 'class_student'
+		});
+		
+		sequelize.sync(/*{force: true}*/).then(err => {
+			resolve();
+		});
 	});
-
-
-/**
- * THIS IS A TEST METHOD!!!!! BE SURE TO DELETE
- */
-var test = () => {
-	User.create({
-  	username: 'john-doe',
-  	password: '12345'
-	}).then(function(user) {
-  	console.log(user + ' has been created!');
-	});
-
 };
 
-module.exports.test = test;
+module.exports = initDatabase;

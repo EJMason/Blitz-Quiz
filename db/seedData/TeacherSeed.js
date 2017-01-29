@@ -1,0 +1,101 @@
+module.exports = [{
+  "firstName": "Kenneth",
+  "lastName": "Gutierrez",
+  "password": "8CB0ySSzV0VI",
+  "photo": "http://dummyimage.com/150x150.jpg/5fa2dd/ffffff"
+}, {
+  "firstName": "Tina",
+  "lastName": "Riley",
+  "password": "ijHLjDa7",
+  "photo": "http://dummyimage.com/150x150.bmp/5fa2dd/ffffff"
+}, {
+  "firstName": "Victor",
+  "lastName": "Mills",
+  "password": "ysZbNzfqO8",
+  "photo": "http://dummyimage.com/150x150.jpg/cc0000/ffffff"
+}, {
+  "firstName": "Carolyn",
+  "lastName": "Burns",
+  "password": "3oHUra",
+  "photo": "http://dummyimage.com/150x150.jpg/ff4444/ffffff"
+}, {
+  "firstName": "Juan",
+  "lastName": "Burke",
+  "password": "nUd0ZIujZK",
+  "photo": "http://dummyimage.com/150x150.jpg/ff4444/ffffff"
+}, {
+  "firstName": "Mark",
+  "lastName": "Phillips",
+  "password": "7ujmlV",
+  "photo": "http://dummyimage.com/150x150.bmp/cc0000/ffffff"
+}, {
+  "firstName": "Ernest",
+  "lastName": "Ford",
+  "password": "l1O7Q66SSa4I",
+  "photo": "http://dummyimage.com/150x150.png/dddddd/000000"
+}, {
+  "firstName": "Billy",
+  "lastName": "Bowman",
+  "password": "uAqxsd",
+  "photo": "http://dummyimage.com/150x150.bmp/5fa2dd/ffffff"
+}, {
+  "firstName": "Walter",
+  "lastName": "Adams",
+  "password": "0LwaDg",
+  "photo": "http://dummyimage.com/150x150.png/5fa2dd/ffffff"
+}, {
+  "firstName": "Shawn",
+  "lastName": "Sanders",
+  "password": "4MBORXE",
+  "photo": "http://dummyimage.com/150x150.bmp/5fa2dd/ffffff"
+}, {
+  "firstName": "Mildred",
+  "lastName": "Cole",
+  "password": "grt5qKQ",
+  "photo": "http://dummyimage.com/150x150.bmp/dddddd/000000"
+}, {
+  "firstName": "Jennifer",
+  "lastName": "Green",
+  "password": "QxnRm7Eq8e",
+  "photo": "http://dummyimage.com/150x150.jpg/ff4444/ffffff"
+}, {
+  "firstName": "Jennifer",
+  "lastName": "Kelley",
+  "password": "EZfgNDUR",
+  "photo": "http://dummyimage.com/150x150.bmp/cc0000/ffffff"
+}, {
+  "firstName": "Beverly",
+  "lastName": "Taylor",
+  "password": "6xyXWQ5nd",
+  "photo": "http://dummyimage.com/150x150.png/cc0000/ffffff"
+}, {
+  "firstName": "Dennis",
+  "lastName": "Harper",
+  "password": "QTkczaN",
+  "photo": "http://dummyimage.com/150x150.jpg/5fa2dd/ffffff"
+}, {
+  "firstName": "Harry",
+  "lastName": "Phillips",
+  "password": "lOSMN2Y2a",
+  "photo": "http://dummyimage.com/150x150.bmp/cc0000/ffffff"
+}, {
+  "firstName": "Diana",
+  "lastName": "Castillo",
+  "password": "xwEtFe58Icma",
+  "photo": "http://dummyimage.com/150x150.bmp/ff4444/ffffff"
+}, {
+  "firstName": "Rebecca",
+  "lastName": "Payne",
+  "password": "aHR0FP",
+  "photo": "http://dummyimage.com/150x150.bmp/ff4444/ffffff"
+}, {
+  "firstName": "Alan",
+  "lastName": "Thompson",
+  "password": "5IYu0J",
+  "photo": "http://dummyimage.com/150x150.png/ff4444/ffffff"
+}, {
+  "firstName": "Carl",
+  "lastName": "Ward",
+  "password": "cr3DuFg",
+  "photo": "http://dummyimage.com/150x150.png/cc0000/ffffff"
+}];

@@ -7,8 +7,9 @@
   "license": "ISC",
   "homepage": "https://github.com/hrla12-Team-Awesome/Blitz-Quiz#readme",
   "scripts": {
-    "webpack": "webpack --progress --colors",
-    "start": "node ./server.js",
+    "webpack": "./node_modules/.bin/webpack -d --watch",
+    "watch": "webpack --watch",
+    "start": "nodemon ./server.js",
     "dev": "webpack-dev-server --progress --colors",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -24,15 +25,26 @@
     "bluebird": "^3.4.7",
     "body-parser": "^1.16.0",
     "bootstrap": "^3.3.7",
+    "chart.js": "^2.4.0",
     "express": "^4.14.0",
+    "mysql": "^2.13.0",
+    "passport": "^0.3.2",
+    "passport-local": "^1.0.0",
     "pg": "^6.1.2",
     "pg-hstore": "^2.3.2",
     "react": "^15.4.2",
     "react-bootstrap": "^0.30.7",
+    "react-chartjs-2": "^2.0.0",
+    "react-chartjs2": "^1.1.1",
     "react-dom": "^15.4.2",
-    "sequelize": "^3.29.0"
+    "react-sidebar": "^2.2.1",
+    "sequelize": "^3.29.0",
+    "socket.io": "^1.7.2",
+    "socket.io-client": "^1.7.2"
   },
   "devDependencies": {
+    "ag-grid": "^7.2.2",
+    "ag-grid-react": "^7.2.0",
     "babel-core": "^6.1.21",
     "babel-loader": "^6.1.0",
     "babel-plugin-transform-class-properties": "^6.19.0",
@@ -42,9 +54,13 @@
     "copy-webpack-plugin": "^0.2.0",
     "css-loader": "^0.26.1",
     "file-loader": "^0.9.0",
+    "lodash": "^4.17.4",
+    "react-data-grid": "^2.0.1",
+    "react-datagrid": "^2.1.2",
     "react-hot-loader": "^1.3.0",
     "style-loader": "^0.13.1",
     "url-loader": "^0.5.7",
+    "validator": "^6.2.1",
     "webpack": "^1.12.6",
     "webpack-dev-server": "^1.12.1"
   }

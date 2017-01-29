@@ -13,9 +13,15 @@ module.exports = {
     path: BUILD_DIR,
     filename: 'bundle.js'
   },
+  resolve:{
+    alias: {
+    "ag-grid-root" : __dirname + "/node_modules/ag-grid"
+    }
+  },
   devServer: {
     contentBase: BUILD_DIR,
   },
+  watch: true,
   module: {
     loaders: [
       {
@@ -34,6 +40,10 @@ module.exports = {
       {
         test: /\.css$/,
         loader: "style-loader!css-loader"
+      },
+      {
+        test: /\.json$/,
+        loader: "json-loader"
       },
       {
         test: /\.png$/,
